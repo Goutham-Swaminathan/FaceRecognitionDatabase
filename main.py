@@ -2,7 +2,7 @@ import os
 import Dataset
 import Encoding
 
-pwd = os.path.dirname(os.path.realpath(__file__))
+pwd = os.path.dirname(os.path.realpath(__file__)) //specify the path of the file
 
 if not os.path.isfile(pwd+'/Face_database.db'):
     Encoding.Make_Table()
