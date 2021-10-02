@@ -7,7 +7,7 @@ def Dataset(Name):
     
     cap = cv2.VideoCapture(1)
     count = 0
-    text = 'Press Q to save an image'
+    text = 'Press S to save an image'
     color = (0,255,0)
     status = False
     Border = 10
@@ -22,7 +22,7 @@ def Dataset(Name):
 
         Input_Key = cv2.waitKey(1)
 
-        if Input_Key == ord('q'):
+        if Input_Key == ord('s'):
             
             Save_Frame = Frame.copy()
             Encoder_status= Encoding.Encoder(Save_Frame,Primary_id,Frame.shape)
